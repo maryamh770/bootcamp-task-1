@@ -1,0 +1,135 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --color-primary: #219f95;
+  --color-primaray-light: #afcedd;
+  --color-text: #234894;
+  --color-text-light: #696969;
+  --color-text-dark: #1e1e1e;
+  --color-white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 5.6rem 5.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  padding: 31px 17px
+}
+
+
+.block__request .request{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.requests{
+  padding: 17px;
+}
+
+.request .request__data{
+  display: flex;
+  align-items: center;
+}
+
+.request .request__data .request__data-num{
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primaray-light);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+}
+
+.request .request__data span{
+  margin-right: 2rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.requests .request .request__date{
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+}
+
+.requests h2{
+  font-size: 1.8rem;
+  color: var(--color-text-dark);
+  margin-top: 2.4rem;
+}
+
+.personal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.personal .personal__code{
+  font-size: 1.2rem;
+  color: var(--color-text-light);
+}
+
+.personal__name{
+  display: flex;
+  align-items: center;
+}
+
+.personal__name img{
+  width: 40px;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 8px;
+}
+
+.personal__name span{
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+.personal .button .btn{
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 2rem 1.5rem;
+  border-radius: 8px;
+}
+
+.block__request{
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width:768px) {
+  .block__request{
+    grid-template-columns: 1fr 1fr;
+  } 
+}
+
+@media screen and (min-width:1024px) {
+  .block__request{
+    grid-template-columns: repeat(3, 1fr);
+  } 
+}
